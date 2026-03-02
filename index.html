@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | Result Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+
+    <div class="container">
+        <div id="topperShowcase" class="topper-showcase hidden">
+            <!-- Topper info will be injected here -->
+        </div>
+
+        <header>
+            <h1>Student Portal</h1>
+            <p>Check your results and academic performance</p>
+        </header>
+
+        <main>
+            <div class="search-card">
+                <div class="search-header">
+                    <h2>Find My Result</h2>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="studentName">Full Name</label>
+                        <input type="text" id="studentName" placeholder="Enter name" autocomplete="off">
+                    </div>
+                    <div class="input-group">
+                        <label for="rollNumber">Roll Number</label>
+                        <input type="text" id="rollNumber" placeholder="Roll No" autocomplete="off">
+                    </div>
+                </div>
+                <button id="searchBtn" class="primary-btn">
+                    <span class="btn-text">View My Grades</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </div>
+
+            <div id="resultContainer" class="result-container hidden">
+                <!-- Result card will be injected here -->
+            </div>
+
+            <div id="errorContainer" class="error-container hidden">
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Student Portal. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
